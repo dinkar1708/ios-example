@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2A228E253FD8CB0066476B /* NetworkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2A228C253FD8CB0066476B /* NetworkDemo.storyboard */; };
 		7F51358123E114240043438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358023E114240043438D /* AppDelegate.swift */; };
 		7F51358323E114240043438D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358223E114240043438D /* SceneDelegate.swift */; };
 		7F51358523E114240043438D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358423E114240043438D /* ViewController.swift */; };
@@ -30,9 +31,11 @@
 		7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA5F23E80ABA0032D502 /* CollectionViewCell.swift */; };
 		7F5CBA6323E80AFD0032D502 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA6223E80AFD0032D502 /* DataModel.swift */; };
 		7F5CBA6523E819BB0032D502 /* MyCollectionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA6423E819BB0032D502 /* MyCollectionView2.swift */; };
+		7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F2A228D253FD8CB0066476B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ios-example/Base.lproj/NetworkDemo.storyboard"; sourceTree = "<group>"; };
 		7F51357D23E114240043438D /* ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F51358023E114240043438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F51358223E114240043438D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		7F5CBA5F23E80ABA0032D502 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7F5CBA6223E80AFD0032D502 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7F5CBA6423E819BB0032D502 /* MyCollectionView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView2.swift; sourceTree = "<group>"; };
+		7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7FFC89AD253FD5BF00CC7C30 /* Network */,
 				7F5CBA5B23E809440032D502 /* TableViewCollectionView */,
 				7F56F4F123E3F6B100FE1263 /* screen-shots */,
 				7F56F4EE23E3EF5E00FE1263 /* TabView */,
@@ -166,6 +171,15 @@
 			path = TableViewCollectionView;
 			sourceTree = "<group>";
 		};
+		7FFC89AD253FD5BF00CC7C30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A228C253FD8CB0066476B /* NetworkDemo.storyboard */,
+				7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +244,7 @@
 				7F51358D23E114250043438D /* LaunchScreen.storyboard in Resources */,
 				7F51358A23E114250043438D /* Assets.xcassets in Resources */,
 				7F51358823E114240043438D /* Main.storyboard in Resources */,
+				7F2A228E253FD8CB0066476B /* NetworkDemo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
 				7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */,
 				7F56F4F923E408A200FE1263 /* HeadersFootersTableViewController.swift in Sources */,
@@ -263,6 +279,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		7F2A228C253FD8CB0066476B /* NetworkDemo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2A228D253FD8CB0066476B /* Base */,
+			);
+			name = NetworkDemo.storyboard;
+			sourceTree = "<group>";
+		};
 		7F51358623E114240043438D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -401,13 +425,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AM2A35C3AY;
+				DEVELOPMENT_TEAM = G8525944WC;
 				INFOPLIST_FILE = "ios-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.ios-example";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.ios-example-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

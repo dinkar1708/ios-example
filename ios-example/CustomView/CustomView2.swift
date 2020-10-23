@@ -11,12 +11,12 @@ import UIKit
 
 class CustomView2: UIView {
     
-     func setupViews() {
+    func setupViews() {
         print("setup Views function....")
         backgroundColor = .red
-        var image: UIImage = UIImage(named: "apple")!
+        let image: UIImage = UIImage(named: "apple")!
         let imageView = UIImageView(image: image)
         self.addSubview(imageView)
-           }
+    }
 }
 

@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
         
+        let nv = UIButton()
+        nv.backgroundColor = .gray
+        nv.setTitle("NetworkExample", for: .normal)
+        nv.addTarget(self, action: #selector(networkDemoAction), for: .touchUpInside)
+        
         let tableView = UIButton()
         tableView.backgroundColor = .gray
         tableView.setTitle("TableViewExample", for: .normal)
@@ -64,7 +69,8 @@ class ViewController: UIViewController {
         tableViewCollectionView.backgroundColor = .gray
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
-        
+
+        stackView.addArrangedSubview(nv)
         stackView.addArrangedSubview(tableView)
         stackView.addArrangedSubview(tableView2)
         stackView.addArrangedSubview(tableView2MultipleSection)
@@ -82,6 +88,17 @@ class ViewController: UIViewController {
         stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
+    }
+    
+    override func loadView() {
+        super.loadView()
+    }
+    
+    @objc func networkDemoAction(sender: UIButton!) {
+        // Create a reference to the the storyboard
+        let storyboard = UIStoryboard(name: "NetworkDemo", bundle: nil)
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "NetworkDemoViewController") as!NetworkDemoViewController
+        self.present(customViewController, animated: true, completion: nil)
     }
     
     @objc func tableViewAction(sender: UIButton!) {
