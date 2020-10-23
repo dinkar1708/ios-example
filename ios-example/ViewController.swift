@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
         
+        let av = UIButton()
+        av.backgroundColor = .gray
+        av.setTitle("Auto Layout Example", for: .normal)
+        av.addTarget(self, action: #selector(autoLayoutDemoAction), for: .touchUpInside)
+        
         let nv = UIButton()
         nv.backgroundColor = .gray
         nv.setTitle("NetworkExample", for: .normal)
@@ -69,7 +74,8 @@ class ViewController: UIViewController {
         tableViewCollectionView.backgroundColor = .gray
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
-
+        
+        stackView.addArrangedSubview(av)
         stackView.addArrangedSubview(nv)
         stackView.addArrangedSubview(tableView)
         stackView.addArrangedSubview(tableView2)
@@ -79,7 +85,7 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(collectionView)
         stackView.addArrangedSubview(collectionViewAdvance)
         stackView.addArrangedSubview(tableViewCollectionView)
-
+        
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(stackView)
@@ -90,8 +96,18 @@ class ViewController: UIViewController {
         
     }
     
-    override func loadView() {
-        super.loadView()
+    override func viewDidAppear(_ animated: Bool) {
+        // Create a reference to the the storyboard
+        let storyboard = UIStoryboard(name: "AutoLayout", bundle: nil)
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "AutoLayoutViewCntroller") as!AutoLayoutViewCntroller
+        self.present(customViewController, animated: true, completion: nil)
+    }
+    
+    @objc func autoLayoutDemoAction(sender: UIButton!) {
+        // Create a reference to the the storyboard
+        let storyboard = UIStoryboard(name: "AutoLayout", bundle: nil)
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "AutoLayoutViewCntroller") as!AutoLayoutViewCntroller
+        self.present(customViewController, animated: true, completion: nil)
     }
     
     @objc func networkDemoAction(sender: UIButton!) {
@@ -100,6 +116,7 @@ class ViewController: UIViewController {
         let customViewController = storyboard.instantiateViewController(withIdentifier: "NetworkDemoViewController") as!NetworkDemoViewController
         self.present(customViewController, animated: true, completion: nil)
     }
+    
     
     @objc func tableViewAction(sender: UIButton!) {
         let controller:TableViewController = TableViewController()
@@ -131,8 +148,8 @@ class ViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
     }
     @objc func tableViewCollectionViewAction(sender: UIButton!) {
-           let controller:TableViewCollectionViewController = TableViewCollectionViewController()
-           self.present(controller, animated: true, completion: nil)
-       }
+        let controller:TableViewCollectionViewController = TableViewCollectionViewController()
+        self.present(controller, animated: true, completion: nil)
+    }
 }
 
