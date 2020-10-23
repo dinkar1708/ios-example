@@ -97,7 +97,6 @@
 				7FFC89AD253FD5BF00CC7C30 /* Network */,
 				7F5CBA5B23E809440032D502 /* TableViewCollectionView */,
 				7F56F4F123E3F6B100FE1263 /* screen-shots */,
-				7F56F4EE23E3EF5E00FE1263 /* TabView */,
 				7F5135A223E1726B0043438D /* CollectionView */,
 				7F51359B23E1691E0043438D /* CustomView */,
 				7F51359423E116060043438D /* TableView */,
@@ -140,13 +139,6 @@
 				7F5135A723E18EAD0043438D /* AdvanceCollectionViewController.swift */,
 			);
 			path = CollectionView;
-			sourceTree = "<group>";
-		};
-		7F56F4EE23E3EF5E00FE1263 /* TabView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TabView;
 			sourceTree = "<group>";
 		};
 		7F56F4F123E3F6B100FE1263 /* screen-shots */ = {
