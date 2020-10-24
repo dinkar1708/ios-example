@@ -102,7 +102,8 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
-				7FB3ECD425432D0100F653AF /* autolayout */,
+				7FB3ECE22543E9E600F653AF /* AdaptiveLayout */,
+				7FB3ECD425432D0100F653AF /* Autolayout */,
 				7FFC89AD253FD5BF00CC7C30 /* Network */,
 				7F5CBA5B23E809440032D502 /* TableViewCollectionView */,
 				7F56F4F123E3F6B100FE1263 /* screen-shots */,
@@ -172,7 +173,7 @@
 			path = TableViewCollectionView;
 			sourceTree = "<group>";
 		};
-		7FB3ECD425432D0100F653AF /* autolayout */ = {
+		7FB3ECD425432D0100F653AF /* Autolayout */ = {
 			isa = PBXGroup;
 			children = (
 				7FB3ECD525432D7600F653AF /* AutoLayoutViewCntroller.swift */,
@@ -180,7 +181,14 @@
 				7FB3ECDC25434CFC00F653AF /* PriorityConstraintViewController.swift */,
 				7FB3ECDF2543D48600F653AF /* InstrinsicContentSizeViewController.swift */,
 			);
-			path = autolayout;
+			path = Autolayout;
+			sourceTree = "<group>";
+		};
+		7FB3ECE22543E9E600F653AF /* AdaptiveLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdaptiveLayout;
 			sourceTree = "<group>";
 		};
 		7FFC89AD253FD5BF00CC7C30 /* Network */ = {
