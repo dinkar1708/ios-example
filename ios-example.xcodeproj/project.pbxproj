@@ -39,9 +39,9 @@
 		7FB3ECE82543EB1D00F653AF /* AdaptiveLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3ECE72543EB1D00F653AF /* AdaptiveLayout.storyboard */; };
 		7FB3ECF92544342500F653AF /* AutoLayoutViewCntroller2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECF82544342500F653AF /* AutoLayoutViewCntroller2.swift */; };
 		7FB3ECFD2544343500F653AF /* AutoLayout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3ECFC2544343500F653AF /* AutoLayout2.storyboard */; };
-		7FB3ECFF2544344400F653AF /* PriorityConstraintViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECFE2544344400F653AF /* PriorityConstraintViewController2.swift */; };
 		7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */; };
 		7FB3ED082544458100F653AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED072544458100F653AF /* SignUpViewController.swift */; };
+		7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */; };
 		7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +80,9 @@
 		7FB3ECE72543EB1D00F653AF /* AdaptiveLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdaptiveLayout.storyboard; sourceTree = "<group>"; };
 		7FB3ECF82544342500F653AF /* AutoLayoutViewCntroller2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewCntroller2.swift; sourceTree = "<group>"; };
 		7FB3ECFC2544343500F653AF /* AutoLayout2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutoLayout2.storyboard; sourceTree = "<group>"; };
-		7FB3ECFE2544344400F653AF /* PriorityConstraintViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController2.swift; sourceTree = "<group>"; };
 		7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlacementToCorners1.swift; sourceTree = "<group>"; };
 		7FB3ED072544458100F653AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController2.swift; sourceTree = "<group>"; };
 		7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,9 +213,9 @@
 			children = (
 				7FB3ECFC2544343500F653AF /* AutoLayout2.storyboard */,
 				7FB3ECF82544342500F653AF /* AutoLayoutViewCntroller2.swift */,
-				7FB3ECFE2544344400F653AF /* PriorityConstraintViewController2.swift */,
 				7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */,
 				7FB3ED072544458100F653AF /* SignUpViewController.swift */,
+				7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */,
 			);
 			name = Autolayout2;
 			path = Autolayout/Autolayout2;
@@ -312,6 +312,7 @@
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
 				7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */,
 				7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */,
+				7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */,
 				7FB3ECDD25434CFC00F653AF /* PriorityConstraintViewController.swift in Sources */,
 				7F56F4F923E408A200FE1263 /* HeadersFootersTableViewController.swift in Sources */,
 				7F51359A23E11B480043438D /* TableViewController2.swift in Sources */,
@@ -319,7 +320,6 @@
 				7FB3ECE02543D48600F653AF /* InstrinsicContentSizeViewController.swift in Sources */,
 				7F51358523E114240043438D /* ViewController.swift in Sources */,
 				7F51358123E114240043438D /* AppDelegate.swift in Sources */,
-				7FB3ECFF2544344400F653AF /* PriorityConstraintViewController2.swift in Sources */,
 				7F51359F23E169ED0043438D /* CustomView.swift in Sources */,
 				7F5CBA6023E80ABA0032D502 /* MyCollectionView.swift in Sources */,
 				7FB3ECE52543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift in Sources */,
