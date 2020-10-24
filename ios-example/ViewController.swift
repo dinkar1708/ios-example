@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
         
+        let alv = UIButton()
+        alv.backgroundColor = .gray
+        alv.setTitle("Adaptive Layout Example", for: .normal)
+        alv.addTarget(self, action: #selector(adaptiveLayoutDemoAction), for: .touchUpInside)
+        
         let av = UIButton()
         av.backgroundColor = .gray
         av.setTitle("Auto Layout Example", for: .normal)
@@ -75,6 +80,7 @@ class ViewController: UIViewController {
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
         
+        stackView.addArrangedSubview(alv)
         stackView.addArrangedSubview(av)
         stackView.addArrangedSubview(nv)
         stackView.addArrangedSubview(tableView)
@@ -98,9 +104,17 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // Create a reference to the the storyboard
-        let storyboard = UIStoryboard(name: "AutoLayout", bundle: nil)
-        let customViewController = storyboard.instantiateViewController(withIdentifier: "AutoLayoutViewCntroller") as!AutoLayoutViewCntroller
-        self.present(customViewController, animated: true, completion: nil)
+        // Create a reference to the the storyboard
+        let storyboard = UIStoryboard(name: "AdaptiveLayout", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AdaptiveLayoutViewCntroller") as!AdaptiveLayoutViewCntroller
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func adaptiveLayoutDemoAction(sender: UIButton!) {
+        // Create a reference to the the storyboard
+        let storyboard = UIStoryboard(name: "AdaptiveLayout", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AdaptiveLayoutViewCntroller") as!AdaptiveLayoutViewCntroller
+        self.present(vc, animated: true, completion: nil)
     }
     
     @objc func autoLayoutDemoAction(sender: UIButton!) {
