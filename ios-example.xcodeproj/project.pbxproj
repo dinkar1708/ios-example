@@ -31,6 +31,12 @@
 		7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA5F23E80ABA0032D502 /* CollectionViewCell.swift */; };
 		7F5CBA6323E80AFD0032D502 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA6223E80AFD0032D502 /* DataModel.swift */; };
 		7F5CBA6523E819BB0032D502 /* MyCollectionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA6423E819BB0032D502 /* MyCollectionView2.swift */; };
+		7FB3ECD625432D7600F653AF /* AutoLayoutViewCntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECD525432D7600F653AF /* AutoLayoutViewCntroller.swift */; };
+		7FB3ECDA25432D9700F653AF /* AutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3ECD925432D9700F653AF /* AutoLayout.storyboard */; };
+		7FB3ECDD25434CFC00F653AF /* PriorityConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECDC25434CFC00F653AF /* PriorityConstraintViewController.swift */; };
+		7FB3ECE02543D48600F653AF /* InstrinsicContentSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECDF2543D48600F653AF /* InstrinsicContentSizeViewController.swift */; };
+		7FB3ECE52543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECE42543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift */; };
+		7FB3ECE82543EB1D00F653AF /* AdaptiveLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3ECE72543EB1D00F653AF /* AdaptiveLayout.storyboard */; };
 		7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +67,12 @@
 		7F5CBA5F23E80ABA0032D502 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7F5CBA6223E80AFD0032D502 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7F5CBA6423E819BB0032D502 /* MyCollectionView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView2.swift; sourceTree = "<group>"; };
+		7FB3ECD525432D7600F653AF /* AutoLayoutViewCntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewCntroller.swift; sourceTree = "<group>"; };
+		7FB3ECD925432D9700F653AF /* AutoLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayout.storyboard; sourceTree = "<group>"; };
+		7FB3ECDC25434CFC00F653AF /* PriorityConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController.swift; sourceTree = "<group>"; };
+		7FB3ECDF2543D48600F653AF /* InstrinsicContentSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrinsicContentSizeViewController.swift; sourceTree = "<group>"; };
+		7FB3ECE42543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutViewCntroller.swift; sourceTree = "<group>"; };
+		7FB3ECE72543EB1D00F653AF /* AdaptiveLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdaptiveLayout.storyboard; sourceTree = "<group>"; };
 		7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +106,8 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7FB3ECE22543E9E600F653AF /* AdaptiveLayout */,
+				7FB3ECD425432D0100F653AF /* Autolayout */,
 				7FFC89AD253FD5BF00CC7C30 /* Network */,
 				7F5CBA5B23E809440032D502 /* TableViewCollectionView */,
 				7F56F4F123E3F6B100FE1263 /* screen-shots */,
@@ -161,6 +175,26 @@
 				7F5CBA5C23E809810032D502 /* TableViewCollectionViewController.swift */,
 			);
 			path = TableViewCollectionView;
+			sourceTree = "<group>";
+		};
+		7FB3ECD425432D0100F653AF /* Autolayout */ = {
+			isa = PBXGroup;
+			children = (
+				7FB3ECD525432D7600F653AF /* AutoLayoutViewCntroller.swift */,
+				7FB3ECD925432D9700F653AF /* AutoLayout.storyboard */,
+				7FB3ECDC25434CFC00F653AF /* PriorityConstraintViewController.swift */,
+				7FB3ECDF2543D48600F653AF /* InstrinsicContentSizeViewController.swift */,
+			);
+			path = Autolayout;
+			sourceTree = "<group>";
+		};
+		7FB3ECE22543E9E600F653AF /* AdaptiveLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7FB3ECE42543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift */,
+				7FB3ECE72543EB1D00F653AF /* AdaptiveLayout.storyboard */,
+			);
+			path = AdaptiveLayout;
 			sourceTree = "<group>";
 		};
 		7FFC89AD253FD5BF00CC7C30 /* Network */ = {
@@ -233,10 +267,12 @@
 				7F56F4F523E3F80600FE1263 /* Horizontal-CollectionView2.png in Resources */,
 				7F56F4F323E3F7B600FE1263 /* Horizontal-CollectionView.png in Resources */,
 				7F56F4F023E3F6AC00FE1263 /* VerticalCollectionViewController.png in Resources */,
+				7FB3ECDA25432D9700F653AF /* AutoLayout.storyboard in Resources */,
 				7F51358D23E114250043438D /* LaunchScreen.storyboard in Resources */,
 				7F51358A23E114250043438D /* Assets.xcassets in Resources */,
 				7F51358823E114240043438D /* Main.storyboard in Resources */,
 				7F2A228E253FD8CB0066476B /* NetworkDemo.storyboard in Resources */,
+				7FB3ECE82543EB1D00F653AF /* AdaptiveLayout.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,15 +286,19 @@
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
 				7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */,
+				7FB3ECDD25434CFC00F653AF /* PriorityConstraintViewController.swift in Sources */,
 				7F56F4F923E408A200FE1263 /* HeadersFootersTableViewController.swift in Sources */,
 				7F51359A23E11B480043438D /* TableViewController2.swift in Sources */,
 				7F5CBA6523E819BB0032D502 /* MyCollectionView2.swift in Sources */,
+				7FB3ECE02543D48600F653AF /* InstrinsicContentSizeViewController.swift in Sources */,
 				7F51358523E114240043438D /* ViewController.swift in Sources */,
 				7F51358123E114240043438D /* AppDelegate.swift in Sources */,
 				7F51359F23E169ED0043438D /* CustomView.swift in Sources */,
 				7F5CBA6023E80ABA0032D502 /* MyCollectionView.swift in Sources */,
+				7FB3ECE52543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift in Sources */,
 				7F5CBA6323E80AFD0032D502 /* DataModel.swift in Sources */,
 				7F5135A823E18EAD0043438D /* AdvanceCollectionViewController.swift in Sources */,
+				7FB3ECD625432D7600F653AF /* AutoLayoutViewCntroller.swift in Sources */,
 				7F56F4F723E401EB00FE1263 /* MultipleSectionTableViewController.swift in Sources */,
 				7F5135A123E16D150043438D /* CustomView2.swift in Sources */,
 				7F5CBA5D23E809810032D502 /* TableViewCollectionViewController.swift in Sources */,
