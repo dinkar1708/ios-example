@@ -41,6 +41,7 @@
 		7FB3ECFD2544343500F653AF /* AutoLayout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3ECFC2544343500F653AF /* AutoLayout2.storyboard */; };
 		7FB3ECFF2544344400F653AF /* PriorityConstraintViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECFE2544344400F653AF /* PriorityConstraintViewController2.swift */; };
 		7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */; };
+		7FB3ED082544458100F653AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED072544458100F653AF /* SignUpViewController.swift */; };
 		7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		7FB3ECFC2544343500F653AF /* AutoLayout2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AutoLayout2.storyboard; sourceTree = "<group>"; };
 		7FB3ECFE2544344400F653AF /* PriorityConstraintViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController2.swift; sourceTree = "<group>"; };
 		7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlacementToCorners1.swift; sourceTree = "<group>"; };
+		7FB3ED072544458100F653AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,6 +215,7 @@
 				7FB3ECF82544342500F653AF /* AutoLayoutViewCntroller2.swift */,
 				7FB3ECFE2544344400F653AF /* PriorityConstraintViewController2.swift */,
 				7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */,
+				7FB3ED072544458100F653AF /* SignUpViewController.swift */,
 			);
 			name = Autolayout2;
 			path = Autolayout/Autolayout2;
@@ -329,6 +332,7 @@
 				7F5CBA5D23E809810032D502 /* TableViewCollectionViewController.swift in Sources */,
 				7F51359D23E169520043438D /* CustomViewController.swift in Sources */,
 				7F51358323E114240043438D /* SceneDelegate.swift in Sources */,
+				7FB3ED082544458100F653AF /* SignUpViewController.swift in Sources */,
 				7F51359623E116430043438D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
