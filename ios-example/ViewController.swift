@@ -25,6 +25,11 @@ class ViewController: UIViewController {
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
         
+        let alv2 = UIButton()
+        alv2.backgroundColor = .gray
+        alv2.setTitle("Auto Layout Example2", for: .normal)
+        alv2.addTarget(self, action: #selector(autoLayoutDemoAction2), for: .touchUpInside)
+        
         let alv = UIButton()
         alv.backgroundColor = .gray
         alv.setTitle("Adaptive Layout Example", for: .normal)
@@ -80,6 +85,7 @@ class ViewController: UIViewController {
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
         
+        stackView.addArrangedSubview(alv2)
         stackView.addArrangedSubview(alv)
         stackView.addArrangedSubview(av)
         stackView.addArrangedSubview(nv)
@@ -103,11 +109,16 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "AutoLayout2", bundle: nil)
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "AutoLayoutViewCntroller2") as!AutoLayoutViewCntroller2
+        self.present(customViewController, animated: true, completion: nil)
+    }
+    
+    @objc func autoLayoutDemoAction2(sender: UIButton!) {
         // Create a reference to the the storyboard
-        // Create a reference to the the storyboard
-        let storyboard = UIStoryboard(name: "AdaptiveLayout", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "AdaptiveLayoutViewCntroller") as!AdaptiveLayoutViewCntroller
-        self.present(vc, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "AutoLayout2", bundle: nil)
+        let customViewController = storyboard.instantiateViewController(withIdentifier: "AutoLayoutViewCntroller2") as!AutoLayoutViewCntroller2
+        self.present(customViewController, animated: true, completion: nil)
     }
     
     @objc func adaptiveLayoutDemoAction(sender: UIButton!) {
