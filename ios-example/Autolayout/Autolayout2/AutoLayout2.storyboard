@@ -39,8 +39,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o0-qx-qcj">
-                                <rect key="frame" x="319" y="108" width="34" height="30"/>
+                                <rect key="frame" x="289" y="108" width="64" height="38"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
                                 <state key="normal" title="Save"/>
                             </button>
                         </subviews>
@@ -64,6 +65,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tFa-WU-ftX"/>
+                    <connections>
+                        <outlet property="saveButton" destination="8o0-qx-qcj" id="Bhi-xn-jY6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPI-5B-0ea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

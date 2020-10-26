@@ -10,7 +10,12 @@ import UIKit
 
 class BasicPlacementToCorners1: UIViewController {
     
-  
+    @IBOutlet weak var saveButton: UIButton! {
+        didSet {
+            saveButton.layer.cornerRadius = 10
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
