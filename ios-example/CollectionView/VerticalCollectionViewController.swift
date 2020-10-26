@@ -48,6 +48,13 @@ class VerticalCollectionViewController: UIViewController, UICollectionViewDataSo
         myCollectionView.delegate = self
         myCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         myCollectionView.backgroundColor = UIColor.white
+        
+        let bgImage = UIImageView();
+        bgImage.image = UIImage(named: "apple1");
+        bgImage.contentMode = .scaleToFill
+        
+        myCollectionView.backgroundView = bgImage
+        
         self.view.addSubview(myCollectionView)
     }
 
