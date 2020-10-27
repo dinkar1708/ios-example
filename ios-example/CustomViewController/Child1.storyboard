@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Child1 View Controller-->
+        <scene sceneID="1jz-pX-XfU">
+            <objects>
+                <viewController storyboardIdentifier="Child1ViewController" id="Vuo-wa-MCK" customClass="Child1ViewController" customModule="ios_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j3z-pG-akY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child1 View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePr-76-ouT">
+                                <rect key="frame" x="65" y="54" width="678.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEU-Vz-Vg2">
+                                <rect key="frame" x="10" y="100" width="394" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Vxp-0k-BKy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hSQ-z8-5zs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MEU-Vz-Vg2" firstAttribute="top" secondItem="ePr-76-ouT" secondAttribute="bottom" constant="10" id="GRI-ra-2p1"/>
+                            <constraint firstItem="hSQ-z8-5zs" firstAttribute="trailing" secondItem="MEU-Vz-Vg2" secondAttribute="trailing" constant="10" id="Jco-vb-UFM"/>
+                            <constraint firstItem="ePr-76-ouT" firstAttribute="leading" secondItem="hSQ-z8-5zs" secondAttribute="leading" constant="65" id="dRn-p7-ety"/>
+                            <constraint firstItem="ePr-76-ouT" firstAttribute="trailing" secondItem="hSQ-z8-5zs" secondAttribute="trailing" constant="329.5" id="i3S-NR-13x"/>
+                            <constraint firstItem="ePr-76-ouT" firstAttribute="top" secondItem="hSQ-z8-5zs" secondAttribute="top" constant="10" id="trU-rJ-Gis"/>
+                            <constraint firstItem="MEU-Vz-Vg2" firstAttribute="leading" secondItem="hSQ-z8-5zs" secondAttribute="leading" constant="10" id="vHE-ed-HHq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiView" destination="MEU-Vz-Vg2" id="vET-gJ-Y0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axb-iF-SdL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

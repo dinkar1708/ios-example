@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomViewController: UIViewController {
+class CustomVCViewController: UIViewController {
     var safeArea: UILayoutGuide!
     let view2 = CustomView2()
 

@@ -24,6 +24,11 @@ class ViewController: UIViewController {
         stackView.distribution  = UIStackView.Distribution.equalSpacing
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
+
+        let child = UIButton()
+        child.backgroundColor = .gray
+        child.setTitle("Child View Controller Example", for: .normal)
+        child.addTarget(self, action: #selector(childVCDemoAction), for: .touchUpInside)
         
         let alv2 = UIButton()
         alv2.backgroundColor = .gray
@@ -85,6 +90,7 @@ class ViewController: UIViewController {
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
         
+        stackView.addArrangedSubview(child)
         stackView.addArrangedSubview(alv2)
         stackView.addArrangedSubview(alv)
         stackView.addArrangedSubview(av)
@@ -106,7 +112,19 @@ class ViewController: UIViewController {
         stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
+        let storyboard = UIStoryboard(name: "CustomVC", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CustomVCViewController1") as!CustomVCViewController1
+        self.present(vc, animated: true, completion: nil)
+
     }
+    
+    
+    @objc func childVCDemoAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "CustomVC", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CustomVCViewController1") as!CustomVCViewController1
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         let storyboard = UIStoryboard(name: "AutoLayout2", bundle: nil)
@@ -161,7 +179,7 @@ class ViewController: UIViewController {
     }
     
     @objc func customeViewAction(sender: UIButton!) {
-        let controller:CustomViewController = CustomViewController()
+        let controller:CustomVCViewController = CustomVCViewController()
         self.present(controller, animated: true, completion: nil)
     }
     @objc func verticalcollectionViewAction(sender: UIButton!) {

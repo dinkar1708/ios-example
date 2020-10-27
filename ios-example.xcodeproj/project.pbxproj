@@ -44,6 +44,12 @@
 		7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */; };
 		7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D5254705A60025273A /* auto_layout2.png */; };
 		7FDBD6D8254705A60025273A /* auto_layout.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D6254705A60025273A /* auto_layout.png */; };
+		7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6DB254706570025273A /* CustomVCViewController1.swift */; };
+		7FDBD6E0254706660025273A /* CustomVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6DF254706660025273A /* CustomVC.storyboard */; };
+		7FDBD6E3254706980025273A /* Child1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6E2254706980025273A /* Child1ViewController.swift */; };
+		7FDBD6E6254706CC0025273A /* Child1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6E5254706CC0025273A /* Child1.storyboard */; };
+		7FDBD6F3254718AD0025273A /* Child2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6F2254718AD0025273A /* Child2ViewController.swift */; };
+		7FDBD6F6254718B60025273A /* Child2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6F5254718B60025273A /* Child2.storyboard */; };
 		7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +93,12 @@
 		7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController2.swift; sourceTree = "<group>"; };
 		7FDBD6D5254705A60025273A /* auto_layout2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout2.png; sourceTree = "<group>"; };
 		7FDBD6D6254705A60025273A /* auto_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout.png; sourceTree = "<group>"; };
+		7FDBD6DB254706570025273A /* CustomVCViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVCViewController1.swift; sourceTree = "<group>"; };
+		7FDBD6DF254706660025273A /* CustomVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomVC.storyboard; sourceTree = "<group>"; };
+		7FDBD6E2254706980025273A /* Child1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child1ViewController.swift; sourceTree = "<group>"; };
+		7FDBD6E5254706CC0025273A /* Child1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Child1.storyboard; sourceTree = "<group>"; };
+		7FDBD6F2254718AD0025273A /* Child2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2ViewController.swift; sourceTree = "<group>"; };
+		7FDBD6F5254718B60025273A /* Child2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Child2.storyboard; sourceTree = "<group>"; };
 		7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +132,7 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7FDBD6DA254706380025273A /* CustomViewController */,
 				7FB3ECF72544340400F653AF /* Autolayout2 */,
 				7FB3ECE22543E9E600F653AF /* AdaptiveLayout */,
 				7FB3ECD425432D0100F653AF /* Autolayout */,
@@ -227,6 +240,19 @@
 			path = Autolayout/Autolayout2;
 			sourceTree = "<group>";
 		};
+		7FDBD6DA254706380025273A /* CustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FDBD6DB254706570025273A /* CustomVCViewController1.swift */,
+				7FDBD6DF254706660025273A /* CustomVC.storyboard */,
+				7FDBD6E2254706980025273A /* Child1ViewController.swift */,
+				7FDBD6E5254706CC0025273A /* Child1.storyboard */,
+				7FDBD6F2254718AD0025273A /* Child2ViewController.swift */,
+				7FDBD6F5254718B60025273A /* Child2.storyboard */,
+			);
+			path = CustomViewController;
+			sourceTree = "<group>";
+		};
 		7FFC89AD253FD5BF00CC7C30 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,17 +321,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F56F4F523E3F80600FE1263 /* Horizontal-CollectionView2.png in Resources */,
+				7FDBD6E0254706660025273A /* CustomVC.storyboard in Resources */,
 				7FDBD6D8254705A60025273A /* auto_layout.png in Resources */,
 				7F56F4F323E3F7B600FE1263 /* Horizontal-CollectionView.png in Resources */,
 				7F56F4F023E3F6AC00FE1263 /* VerticalCollectionViewController.png in Resources */,
 				7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */,
 				7FB3ECDA25432D9700F653AF /* AutoLayout.storyboard in Resources */,
+				7FDBD6E6254706CC0025273A /* Child1.storyboard in Resources */,
 				7F51358D23E114250043438D /* LaunchScreen.storyboard in Resources */,
 				7F51358A23E114250043438D /* Assets.xcassets in Resources */,
 				7FB3ECFD2544343500F653AF /* AutoLayout2.storyboard in Resources */,
 				7F51358823E114240043438D /* Main.storyboard in Resources */,
 				7F2A228E253FD8CB0066476B /* NetworkDemo.storyboard in Resources */,
 				7FB3ECE82543EB1D00F653AF /* AdaptiveLayout.storyboard in Resources */,
+				7FDBD6F6254718B60025273A /* Child2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */,
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
+				7FDBD6F3254718AD0025273A /* Child2ViewController.swift in Sources */,
 				7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */,
 				7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */,
 				7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */,
@@ -328,6 +359,7 @@
 				7FB3ECE02543D48600F653AF /* InstrinsicContentSizeViewController.swift in Sources */,
 				7F51358523E114240043438D /* ViewController.swift in Sources */,
 				7F51358123E114240043438D /* AppDelegate.swift in Sources */,
+				7FDBD6E3254706980025273A /* Child1ViewController.swift in Sources */,
 				7F51359F23E169ED0043438D /* CustomView.swift in Sources */,
 				7F5CBA6023E80ABA0032D502 /* MyCollectionView.swift in Sources */,
 				7FB3ECE52543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift in Sources */,

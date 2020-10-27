@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CustomVC View Controller1-->
+        <scene sceneID="2Bi-un-Dao">
+            <objects>
+                <viewController storyboardIdentifier="CustomVCViewController1" id="X1G-lL-feJ" customClass="CustomVCViewController1" customModule="ios_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LHt-N3-bta">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HYx-6M-1lX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom View Controller Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFY-8n-q5c">
+                                        <rect key="frame" x="31.5" y="0.0" width="351" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yFK-2y-572">
+                                        <rect key="frame" x="91" y="32" width="232" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUa-ba-05b">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="38"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="AddChild1"/>
+                                                <connections>
+                                                    <action selector="addChild1Action:" destination="X1G-lL-feJ" eventType="touchUpInside" id="x0Z-yz-t88"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkE-5q-Y9o">
+                                                <rect key="frame" x="120" y="0.0" width="112" height="38"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="AddChild2"/>
+                                                <connections>
+                                                    <action selector="addChild2Action:" destination="X1G-lL-feJ" eventType="touchUpInside" id="UtC-7z-ev9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbQ-2d-jNt">
+                                        <rect key="frame" x="20" y="72" width="374" height="780"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XbQ-2d-jNt" firstAttribute="leading" secondItem="HYx-6M-1lX" secondAttribute="leading" constant="20" symbolic="YES" id="ahm-je-vRr"/>
+                                    <constraint firstAttribute="trailing" secondItem="XbQ-2d-jNt" secondAttribute="trailing" constant="20" symbolic="YES" id="amb-Ds-msG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ZA-WH-aYo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HYx-6M-1lX" firstAttribute="top" secondItem="4ZA-WH-aYo" secondAttribute="top" id="4WO-eM-AdH"/>
+                            <constraint firstAttribute="bottom" secondItem="HYx-6M-1lX" secondAttribute="bottom" id="Ilh-7F-yKR"/>
+                            <constraint firstAttribute="trailing" secondItem="HYx-6M-1lX" secondAttribute="trailing" id="PQy-VC-hyR"/>
+                            <constraint firstItem="HYx-6M-1lX" firstAttribute="leading" secondItem="LHt-N3-bta" secondAttribute="leading" id="zF2-5F-q0f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="XbQ-2d-jNt" id="7Q5-u3-MHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MxF-sv-2lO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.95652173913044" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
