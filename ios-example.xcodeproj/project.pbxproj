@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,8 @@
 		7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA5F23E80ABA0032D502 /* CollectionViewCell.swift */; };
 		7F5CBA6323E80AFD0032D502 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA6223E80AFD0032D502 /* DataModel.swift */; };
 		7F5CBA6523E819BB0032D502 /* MyCollectionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5CBA6423E819BB0032D502 /* MyCollectionView2.swift */; };
+		7FA5CCF2254D0DF400B28545 /* PodUsagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA5CCF1254D0DF400B28545 /* PodUsagesViewController.swift */; };
+		7FA5CCF6254D0E1000B28545 /* PodUsages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA5CCF5254D0E1000B28545 /* PodUsages.storyboard */; };
 		7FB3ECD625432D7600F653AF /* AutoLayoutViewCntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECD525432D7600F653AF /* AutoLayoutViewCntroller.swift */; };
 		7FB3ECDA25432D9700F653AF /* AutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB3ECD925432D9700F653AF /* AutoLayout.storyboard */; };
 		7FB3ECDD25434CFC00F653AF /* PriorityConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ECDC25434CFC00F653AF /* PriorityConstraintViewController.swift */; };
@@ -90,6 +92,8 @@
 		7F5CBA5F23E80ABA0032D502 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7F5CBA6223E80AFD0032D502 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		7F5CBA6423E819BB0032D502 /* MyCollectionView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView2.swift; sourceTree = "<group>"; };
+		7FA5CCF1254D0DF400B28545 /* PodUsagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodUsagesViewController.swift; sourceTree = "<group>"; };
+		7FA5CCF5254D0E1000B28545 /* PodUsages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PodUsages.storyboard; sourceTree = "<group>"; };
 		7FB3ECD525432D7600F653AF /* AutoLayoutViewCntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewCntroller.swift; sourceTree = "<group>"; };
 		7FB3ECD925432D9700F653AF /* AutoLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayout.storyboard; sourceTree = "<group>"; };
 		7FB3ECDC25434CFC00F653AF /* PriorityConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7FA5CCF0254D0DBB00B28545 /* PodUsages */,
 				7F05837A2549BD550042C41A /* SizeClasses */,
 				7FEB275C2549797D00F24E13 /* LandscapeUI */,
 				7FDBD6DA254706380025273A /* CustomViewController */,
@@ -239,6 +244,15 @@
 				7F5CBA5C23E809810032D502 /* TableViewCollectionViewController.swift */,
 			);
 			path = TableViewCollectionView;
+			sourceTree = "<group>";
+		};
+		7FA5CCF0254D0DBB00B28545 /* PodUsages */ = {
+			isa = PBXGroup;
+			children = (
+				7FA5CCF1254D0DF400B28545 /* PodUsagesViewController.swift */,
+				7FA5CCF5254D0E1000B28545 /* PodUsages.storyboard */,
+			);
+			path = PodUsages;
 			sourceTree = "<group>";
 		};
 		7FB3ECD425432D0100F653AF /* Autolayout */ = {
@@ -325,6 +339,7 @@
 				7F51357923E114240043438D /* Sources */,
 				7F51357A23E114240043438D /* Frameworks */,
 				7F51357B23E114240043438D /* Resources */,
+				B4ED8B9955B89E46791D01FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA5CCF6254D0E1000B28545 /* PodUsages.storyboard in Resources */,
 				7F56F4F523E3F80600FE1263 /* Horizontal-CollectionView2.png in Resources */,
 				7FDBD6E0254706660025273A /* CustomVC.storyboard in Resources */,
 				7FDBD6D8254705A60025273A /* auto_layout.png in Resources */,
@@ -418,6 +434,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B4ED8B9955B89E46791D01FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-example/Pods-ios-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-example/Pods-ios-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-example/Pods-ios-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,6 +460,7 @@
 			files = (
 				7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */,
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
+				7FA5CCF2254D0DF400B28545 /* PodUsagesViewController.swift in Sources */,
 				7FEB275E2549799E00F24E13 /* LandScapeUIViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
 				7FDBD6F3254718AD0025273A /* Child2ViewController.swift in Sources */,

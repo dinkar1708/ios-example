@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         stackView.spacing   = 16.0
 
 
+        let pod = UIButton()
+        pod.backgroundColor = .gray
+        pod.setTitle("Pod Usages Example", for: .normal)
+        pod.addTarget(self, action: #selector(podUsagesAction), for: .touchUpInside)
+        
         let size = UIButton()
         size.backgroundColor = .gray
         size.setTitle("Size classes Example", for: .normal)
@@ -108,6 +113,7 @@ class ViewController: UIViewController {
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
 
+        stackView.addArrangedSubview(pod)
         stackView.addArrangedSubview(size)
         stackView.addArrangedSubview(land)
         stackView.addArrangedSubview(child)
@@ -134,6 +140,11 @@ class ViewController: UIViewController {
         
     }
     
+    @objc func podUsagesAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "PodUsages", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PodUsagesViewController") as!PodUsagesViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
     @objc func sizeClassesAction(sender: UIButton!) {
         let storyboard = UIStoryboard(name: "SizeClasses", bundle: nil)

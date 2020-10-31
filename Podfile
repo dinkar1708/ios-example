@@ -6,7 +6,7 @@ target 'ios-example' do
   use_frameworks!
 
   # Pods for ios-example
-  #pod "ViewAnimator"
+  pod "ViewAnimator"
 
 
 end
