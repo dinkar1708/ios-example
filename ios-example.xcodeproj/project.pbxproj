@@ -10,6 +10,10 @@
 		281B1A132D95EE63F6B128F5 /* Pods_ios_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614A2AE66BE8C60A7F71784 /* Pods_ios_example.framework */; };
 		7F05837C2549BD740042C41A /* SizeClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05837B2549BD740042C41A /* SizeClassesViewController.swift */; };
 		7F0583802549BD7F0042C41A /* SizeClasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F05837F2549BD7F0042C41A /* SizeClasses.storyboard */; };
+		7F05DBAD254D177800E7F25E /* NetflixMovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05DBAC254D177800E7F25E /* NetflixMovieController.swift */; };
+		7F05DBB0254D179D00E7F25E /* NetflixMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F05DBAF254D179D00E7F25E /* NetflixMovie.storyboard */; };
+		7F05DBB5254D1ABE00E7F25E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05DBB4254D1ABE00E7F25E /* MovieCell.swift */; };
+		7F05DBB8254D1ED600E7F25E /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05DBB7254D1ED600E7F25E /* MovieModel.swift */; };
 		7F2A228E253FD8CB0066476B /* NetworkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2A228C253FD8CB0066476B /* NetworkDemo.storyboard */; };
 		7F51358123E114240043438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358023E114240043438D /* AppDelegate.swift */; };
 		7F51358323E114240043438D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358223E114240043438D /* SceneDelegate.swift */; };
@@ -66,6 +70,10 @@
 		4614A2AE66BE8C60A7F71784 /* Pods_ios_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F05837B2549BD740042C41A /* SizeClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassesViewController.swift; sourceTree = "<group>"; };
 		7F05837F2549BD7F0042C41A /* SizeClasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeClasses.storyboard; sourceTree = "<group>"; };
+		7F05DBAC254D177800E7F25E /* NetflixMovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMovieController.swift; sourceTree = "<group>"; };
+		7F05DBAF254D179D00E7F25E /* NetflixMovie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NetflixMovie.storyboard; sourceTree = "<group>"; };
+		7F05DBB4254D1ABE00E7F25E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		7F05DBB7254D1ED600E7F25E /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		7F2A228D253FD8CB0066476B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ios-example/Base.lproj/NetworkDemo.storyboard"; sourceTree = "<group>"; };
 		7F51357D23E114240043438D /* ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F51358023E114240043438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +166,17 @@
 			path = WithoutStoryBoard;
 			sourceTree = "<group>";
 		};
+		7F05DBAA254D175400E7F25E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7F05DBAC254D177800E7F25E /* NetflixMovieController.swift */,
+				7F05DBAF254D179D00E7F25E /* NetflixMovie.storyboard */,
+				7F05DBB4254D1ABE00E7F25E /* MovieCell.swift */,
+				7F05DBB7254D1ED600E7F25E /* MovieModel.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		7F51357423E114240043438D = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +198,7 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7F05DBAA254D175400E7F25E /* CollectionView */,
 				7F05DBA8254D167700E7F25E /* WithoutStoryBoard */,
 				7FA5CCF0254D0DBB00B28545 /* PodUsages */,
 				7F05837A2549BD550042C41A /* SizeClasses */,
@@ -401,6 +421,7 @@
 				7FDBD6E0254706660025273A /* CustomVC.storyboard in Resources */,
 				7FDBD6D8254705A60025273A /* auto_layout.png in Resources */,
 				7F56F4F323E3F7B600FE1263 /* Horizontal-CollectionView.png in Resources */,
+				7F05DBB0254D179D00E7F25E /* NetflixMovie.storyboard in Resources */,
 				7F56F4F023E3F6AC00FE1263 /* VerticalCollectionViewController.png in Resources */,
 				7F0583802549BD7F0042C41A /* SizeClasses.storyboard in Resources */,
 				7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */,
@@ -468,12 +489,14 @@
 			files = (
 				7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */,
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
+				7F05DBB5254D1ABE00E7F25E /* MovieCell.swift in Sources */,
 				7FA5CCF2254D0DF400B28545 /* PodUsagesViewController.swift in Sources */,
 				7FEB275E2549799E00F24E13 /* LandScapeUIViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
 				7FDBD6F3254718AD0025273A /* Child2ViewController.swift in Sources */,
 				7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */,
 				7F5CBA6123E80ABA0032D502 /* CollectionViewCell.swift in Sources */,
+				7F05DBB8254D1ED600E7F25E /* MovieModel.swift in Sources */,
 				7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */,
 				7FB3ECDD25434CFC00F653AF /* PriorityConstraintViewController.swift in Sources */,
 				7F56F4F923E408A200FE1263 /* HeadersFootersTableViewController.swift in Sources */,
@@ -487,6 +510,7 @@
 				7F51359F23E169ED0043438D /* CustomView.swift in Sources */,
 				7F5CBA6023E80ABA0032D502 /* MyCollectionView.swift in Sources */,
 				7FB3ECE52543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift in Sources */,
+				7F05DBAD254D177800E7F25E /* NetflixMovieController.swift in Sources */,
 				7F5CBA6323E80AFD0032D502 /* DataModel.swift in Sources */,
 				7F5135A823E18EAD0043438D /* AdvanceCollectionViewController.swift in Sources */,
 				7FB3ECF92544342500F653AF /* AutoLayoutViewCntroller2.swift in Sources */,

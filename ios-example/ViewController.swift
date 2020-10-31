@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "LandScapeUI", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LandScapeUIViewController") as!LandScapeUIViewController
+        let storyboard = UIStoryboard(name: "NetflixMovie", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NetflixMovieController") as!NetflixMovieController
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         stackView.spacing   = 16.0
 
 
+        let movie = UIButton()
+        movie.backgroundColor = .gray
+        movie.setTitle("Collection View Netflix Demo", for: .normal)
+        movie.addTarget(self, action: #selector(movieAction), for: .touchUpInside)
+        
         let pod = UIButton()
         pod.backgroundColor = .gray
         pod.setTitle("Pod Usages Example", for: .normal)
@@ -113,6 +118,7 @@ class ViewController: UIViewController {
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
 
+        stackView.addArrangedSubview(movie)
         stackView.addArrangedSubview(pod)
         stackView.addArrangedSubview(size)
         stackView.addArrangedSubview(land)
@@ -139,6 +145,13 @@ class ViewController: UIViewController {
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
     }
+    
+    @objc func movieAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "NetflixMovie", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NetflixMovieController") as!NetflixMovieController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     @objc func podUsagesAction(sender: UIButton!) {
         let storyboard = UIStoryboard(name: "PodUsages", bundle: nil)
