@@ -147,6 +147,17 @@
 			path = SizeClasses;
 			sourceTree = "<group>";
 		};
+		7F05DBA8254D167700E7F25E /* WithoutStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7F5CBA5B23E809440032D502 /* TableViewCollectionView */,
+				7F51359B23E1691E0043438D /* CustomView */,
+				7F51359423E116060043438D /* TableView */,
+				7F5135A223E1726B0043438D /* CollectionView */,
+			);
+			path = WithoutStoryBoard;
+			sourceTree = "<group>";
+		};
 		7F51357423E114240043438D = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +179,7 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7F05DBA8254D167700E7F25E /* WithoutStoryBoard */,
 				7FA5CCF0254D0DBB00B28545 /* PodUsages */,
 				7F05837A2549BD550042C41A /* SizeClasses */,
 				7FEB275C2549797D00F24E13 /* LandscapeUI */,
@@ -176,11 +188,7 @@
 				7FB3ECE22543E9E600F653AF /* AdaptiveLayout */,
 				7FB3ECD425432D0100F653AF /* Autolayout */,
 				7FFC89AD253FD5BF00CC7C30 /* Network */,
-				7F5CBA5B23E809440032D502 /* TableViewCollectionView */,
 				7F56F4F123E3F6B100FE1263 /* screen-shots */,
-				7F5135A223E1726B0043438D /* CollectionView */,
-				7F51359B23E1691E0043438D /* CustomView */,
-				7F51359423E116060043438D /* TableView */,
 				7F51358023E114240043438D /* AppDelegate.swift */,
 				7F51358223E114240043438D /* SceneDelegate.swift */,
 				7F51358423E114240043438D /* ViewController.swift */,
