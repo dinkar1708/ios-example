@@ -14,9 +14,7 @@ class Child1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let img = UIImage(named: "apple")!
-//        let v = UIImageView(image: img)
-        
+        let img = UIImage(named: "apple")!        
         self.uiView.backgroundColor = UIColor(patternImage: img)
     }
 }
