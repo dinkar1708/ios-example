@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -14,21 +14,74 @@
             <objects>
                 <viewController storyboardIdentifier="Child2ViewController" id="WFb-La-mNM" customClass="Child2ViewController" customModule="ios_example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hJ9-jP-yGK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="ENi-rF-8lY">
+                                <rect key="frame" x="10" y="46" width="355" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NI4-W1-p2e"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwq-OX-sXR" userLabel="Child 2 ">
-                                <rect key="frame" x="180.5" y="437.5" width="53.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="141.66666666666666" y="154" width="91.666666666666657" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="xwD-cn-Luu">
+                                <rect key="frame" x="87" y="206" width="201" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OBU-7f-Pcg">
+                                        <rect key="frame" x="20" y="20" width="161" height="144"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="iXg-Wn-4nh" userLabel="apple_img">
+                                                <rect key="frame" x="30.666666666666657" y="0.0" width="100" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iXg-Wn-4nh" secondAttribute="height" multiplier="1:1" id="4Zn-zq-Svj"/>
+                                                    <constraint firstAttribute="height" constant="100" id="QJa-p7-XWr"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-hf-iBy" userLabel="app_lbl">
+                                                <rect key="frame" x="34.666666666666664" y="108" width="91.666666666666686" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Ga-Gw-kZ0">
+                                        <rect key="frame" x="145.33333333333334" y="0.99999999999999822" width="55.666666666666657" height="28.666666666666664"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="l8k-7q-nem"/>
+                                            <constraint firstAttribute="width" secondItem="0Ga-Gw-kZ0" secondAttribute="height" multiplier="80:43" id="xKB-Kl-Nf6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0Ga-Gw-kZ0" secondAttribute="trailing" id="4OI-qq-qUp"/>
+                                    <constraint firstAttribute="trailing" secondItem="OBU-7f-Pcg" secondAttribute="trailing" constant="20" symbolic="YES" id="GAT-1X-s9O"/>
+                                    <constraint firstItem="0Ga-Gw-kZ0" firstAttribute="top" secondItem="xwD-cn-Luu" secondAttribute="top" id="O3W-CO-wei"/>
+                                    <constraint firstItem="OBU-7f-Pcg" firstAttribute="leading" secondItem="xwD-cn-Luu" secondAttribute="leading" constant="20" symbolic="YES" id="eZZ-qd-uP0"/>
+                                    <constraint firstAttribute="height" constant="200" id="hnH-eX-4Ly"/>
+                                    <constraint firstItem="OBU-7f-Pcg" firstAttribute="top" secondItem="xwD-cn-Luu" secondAttribute="top" constant="20" symbolic="YES" id="rua-Wl-NGL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ssj-pg-MLb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="Fwq-OX-sXR" firstAttribute="centerX" secondItem="hJ9-jP-yGK" secondAttribute="centerX" id="9hl-HO-OYw"/>
-                            <constraint firstItem="Fwq-OX-sXR" firstAttribute="centerY" secondItem="hJ9-jP-yGK" secondAttribute="centerY" id="DMY-3G-LDO"/>
+                            <constraint firstItem="ssj-pg-MLb" firstAttribute="trailing" secondItem="ENi-rF-8lY" secondAttribute="trailing" constant="10" id="A3S-KA-h9R"/>
+                            <constraint firstItem="Fwq-OX-sXR" firstAttribute="top" secondItem="ENi-rF-8lY" secondAttribute="bottom" constant="8" id="Lrh-uE-d3q"/>
+                            <constraint firstItem="ssj-pg-MLb" firstAttribute="trailing" secondItem="xwD-cn-Luu" secondAttribute="trailing" constant="87" id="aJN-dz-EOV"/>
+                            <constraint firstItem="ENi-rF-8lY" firstAttribute="leading" secondItem="ssj-pg-MLb" secondAttribute="leading" constant="10" id="amf-KY-DzX"/>
+                            <constraint firstItem="xwD-cn-Luu" firstAttribute="leading" secondItem="ssj-pg-MLb" secondAttribute="leading" constant="87" id="cqv-yl-Kmy"/>
+                            <constraint firstItem="xwD-cn-Luu" firstAttribute="top" secondItem="Fwq-OX-sXR" secondAttribute="bottom" constant="16" id="gjb-JW-TWR"/>
+                            <constraint firstItem="Fwq-OX-sXR" firstAttribute="centerX" secondItem="hJ9-jP-yGK" secondAttribute="centerX" id="iwK-V4-UKk"/>
+                            <constraint firstItem="ENi-rF-8lY" firstAttribute="top" secondItem="ssj-pg-MLb" secondAttribute="top" constant="2" id="m7p-RY-fdR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,8 +91,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple" width="380" height="465"/>
+        <image name="face.smiling" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F05837C2549BD740042C41A /* SizeClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05837B2549BD740042C41A /* SizeClassesViewController.swift */; };
+		7F0583802549BD7F0042C41A /* SizeClasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F05837F2549BD7F0042C41A /* SizeClasses.storyboard */; };
 		7F2A228E253FD8CB0066476B /* NetworkDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2A228C253FD8CB0066476B /* NetworkDemo.storyboard */; };
 		7F51358123E114240043438D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358023E114240043438D /* AppDelegate.swift */; };
 		7F51358323E114240043438D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F51358223E114240043438D /* SceneDelegate.swift */; };
@@ -50,10 +52,14 @@
 		7FDBD6E6254706CC0025273A /* Child1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6E5254706CC0025273A /* Child1.storyboard */; };
 		7FDBD6F3254718AD0025273A /* Child2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6F2254718AD0025273A /* Child2ViewController.swift */; };
 		7FDBD6F6254718B60025273A /* Child2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6F5254718B60025273A /* Child2.storyboard */; };
+		7FEB275E2549799E00F24E13 /* LandScapeUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB275D2549799E00F24E13 /* LandScapeUIViewController.swift */; };
+		7FEB2762254979AC00F24E13 /* LandScapeUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB2761254979AC00F24E13 /* LandScapeUI.storyboard */; };
 		7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F05837B2549BD740042C41A /* SizeClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassesViewController.swift; sourceTree = "<group>"; };
+		7F05837F2549BD7F0042C41A /* SizeClasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeClasses.storyboard; sourceTree = "<group>"; };
 		7F2A228D253FD8CB0066476B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ios-example/Base.lproj/NetworkDemo.storyboard"; sourceTree = "<group>"; };
 		7F51357D23E114240043438D /* ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F51358023E114240043438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 		7FDBD6E5254706CC0025273A /* Child1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Child1.storyboard; sourceTree = "<group>"; };
 		7FDBD6F2254718AD0025273A /* Child2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2ViewController.swift; sourceTree = "<group>"; };
 		7FDBD6F5254718B60025273A /* Child2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Child2.storyboard; sourceTree = "<group>"; };
+		7FEB275D2549799E00F24E13 /* LandScapeUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandScapeUIViewController.swift; sourceTree = "<group>"; };
+		7FEB2761254979AC00F24E13 /* LandScapeUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandScapeUI.storyboard; sourceTree = "<group>"; };
 		7FFC89AF253FD67200CC7C30 /* NetworkDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F05837A2549BD550042C41A /* SizeClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7F05837B2549BD740042C41A /* SizeClassesViewController.swift */,
+				7F05837F2549BD7F0042C41A /* SizeClasses.storyboard */,
+			);
+			path = SizeClasses;
+			sourceTree = "<group>";
+		};
 		7F51357423E114240043438D = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +149,8 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7F05837A2549BD550042C41A /* SizeClasses */,
+				7FEB275C2549797D00F24E13 /* LandscapeUI */,
 				7FDBD6DA254706380025273A /* CustomViewController */,
 				7FB3ECF72544340400F653AF /* Autolayout2 */,
 				7FB3ECE22543E9E600F653AF /* AdaptiveLayout */,
@@ -253,6 +272,15 @@
 			path = CustomViewController;
 			sourceTree = "<group>";
 		};
+		7FEB275C2549797D00F24E13 /* LandscapeUI */ = {
+			isa = PBXGroup;
+			children = (
+				7FEB275D2549799E00F24E13 /* LandScapeUIViewController.swift */,
+				7FEB2761254979AC00F24E13 /* LandScapeUI.storyboard */,
+			);
+			path = LandscapeUI;
+			sourceTree = "<group>";
+		};
 		7FFC89AD253FD5BF00CC7C30 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,7 +353,9 @@
 				7FDBD6D8254705A60025273A /* auto_layout.png in Resources */,
 				7F56F4F323E3F7B600FE1263 /* Horizontal-CollectionView.png in Resources */,
 				7F56F4F023E3F6AC00FE1263 /* VerticalCollectionViewController.png in Resources */,
+				7F0583802549BD7F0042C41A /* SizeClasses.storyboard in Resources */,
 				7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */,
+				7FEB2762254979AC00F24E13 /* LandScapeUI.storyboard in Resources */,
 				7FB3ECDA25432D9700F653AF /* AutoLayout.storyboard in Resources */,
 				7FDBD6E6254706CC0025273A /* Child1.storyboard in Resources */,
 				7F51358D23E114250043438D /* LaunchScreen.storyboard in Resources */,
@@ -347,6 +377,7 @@
 			files = (
 				7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */,
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
+				7FEB275E2549799E00F24E13 /* LandScapeUIViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
 				7FDBD6F3254718AD0025273A /* Child2ViewController.swift in Sources */,
 				7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */,
@@ -359,6 +390,7 @@
 				7FB3ECE02543D48600F653AF /* InstrinsicContentSizeViewController.swift in Sources */,
 				7F51358523E114240043438D /* ViewController.swift in Sources */,
 				7F51358123E114240043438D /* AppDelegate.swift in Sources */,
+				7F05837C2549BD740042C41A /* SizeClassesViewController.swift in Sources */,
 				7FDBD6E3254706980025273A /* Child1ViewController.swift in Sources */,
 				7F51359F23E169ED0043438D /* CustomView.swift in Sources */,
 				7F5CBA6023E80ABA0032D502 /* MyCollectionView.swift in Sources */,

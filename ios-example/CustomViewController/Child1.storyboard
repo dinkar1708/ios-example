@@ -24,22 +24,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEU-Vz-Vg2">
-                                <rect key="frame" x="10" y="100" width="394" height="100"/>
+                                <rect key="frame" x="107" y="100" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Vxp-0k-BKy"/>
+                                    <constraint firstAttribute="height" constant="200" id="CsH-xA-YpB"/>
+                                    <constraint firstAttribute="width" constant="200" id="cq4-Yr-4YK"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hSQ-z8-5zs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MEU-Vz-Vg2" firstAttribute="centerX" secondItem="j3z-pG-akY" secondAttribute="centerX" id="0ui-xC-Mps"/>
                             <constraint firstItem="MEU-Vz-Vg2" firstAttribute="top" secondItem="ePr-76-ouT" secondAttribute="bottom" constant="10" id="GRI-ra-2p1"/>
-                            <constraint firstItem="hSQ-z8-5zs" firstAttribute="trailing" secondItem="MEU-Vz-Vg2" secondAttribute="trailing" constant="10" id="Jco-vb-UFM"/>
                             <constraint firstItem="ePr-76-ouT" firstAttribute="leading" secondItem="hSQ-z8-5zs" secondAttribute="leading" constant="65" id="dRn-p7-ety"/>
                             <constraint firstItem="ePr-76-ouT" firstAttribute="trailing" secondItem="hSQ-z8-5zs" secondAttribute="trailing" constant="329.5" id="i3S-NR-13x"/>
                             <constraint firstItem="ePr-76-ouT" firstAttribute="top" secondItem="hSQ-z8-5zs" secondAttribute="top" constant="10" id="trU-rJ-Gis"/>
-                            <constraint firstItem="MEU-Vz-Vg2" firstAttribute="leading" secondItem="hSQ-z8-5zs" secondAttribute="leading" constant="10" id="vHE-ed-HHq"/>
                         </constraints>
                     </view>
                     <connections>

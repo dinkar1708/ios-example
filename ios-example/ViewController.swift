@@ -16,6 +16,13 @@ class ViewController: UIViewController {
         uiSetup()
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "LandScapeUI", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LandScapeUIViewController") as!LandScapeUIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     func uiSetup() {
         //Stack View to arrange view automatically
         let stackView   = UIStackView()
@@ -25,6 +32,17 @@ class ViewController: UIViewController {
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
 
+
+        let size = UIButton()
+        size.backgroundColor = .gray
+        size.setTitle("Size classes Example", for: .normal)
+        size.addTarget(self, action: #selector(sizeClassesAction), for: .touchUpInside)
+        
+        let land = UIButton()
+        land.backgroundColor = .gray
+        land.setTitle("Land Scape UI Example", for: .normal)
+        land.addTarget(self, action: #selector(landScapeDemoAction), for: .touchUpInside)
+        
         let child = UIButton()
         child.backgroundColor = .gray
         child.setTitle("Child View Controller Example", for: .normal)
@@ -89,7 +107,9 @@ class ViewController: UIViewController {
         tableViewCollectionView.backgroundColor = .gray
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
-        
+
+        stackView.addArrangedSubview(size)
+        stackView.addArrangedSubview(land)
         stackView.addArrangedSubview(child)
         stackView.addArrangedSubview(alv2)
         stackView.addArrangedSubview(alv)
@@ -112,12 +132,20 @@ class ViewController: UIViewController {
         stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         
-        let storyboard = UIStoryboard(name: "CustomVC", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "CustomVCViewController1") as!CustomVCViewController1
-        self.present(vc, animated: true, completion: nil)
-
     }
     
+    
+    @objc func sizeClassesAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "SizeClasses", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SizeClassesViewController") as!SizeClassesViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func landScapeDemoAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "LandScapeUI", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LandScapeUIViewController") as!LandScapeUIViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
     @objc func childVCDemoAction(sender: UIButton!) {
         let storyboard = UIStoryboard(name: "CustomVC", bundle: nil)
@@ -125,12 +153,6 @@ class ViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
-    
-    override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "AutoLayout2", bundle: nil)
-        let customViewController = storyboard.instantiateViewController(withIdentifier: "AutoLayoutViewCntroller2") as!AutoLayoutViewCntroller2
-        self.present(customViewController, animated: true, completion: nil)
-    }
     
     @objc func autoLayoutDemoAction2(sender: UIButton!) {
         // Create a reference to the the storyboard
