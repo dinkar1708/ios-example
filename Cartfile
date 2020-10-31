@@ -1,0 +1,3 @@
+# Rx swift
+#github "ReactiveX/RxSwift" ~> 5.1.1
+#github "Alamofire/Alamofire"
