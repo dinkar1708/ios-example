@@ -46,6 +46,8 @@ Create a `Cartfile` that lists the framework and run `carthage update`.
 
 ```
 github "ReactiveX/RxSwift" ~> 5.1.1
+github "Alamofire/Alamofire"
+
 
 ```
 #### Manually
