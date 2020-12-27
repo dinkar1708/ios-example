@@ -52,6 +52,10 @@
 		7FB3ED082544458100F653AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED072544458100F653AF /* SignUpViewController.swift */; };
 		7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */; };
 		7FD0EA062598610100AA2A09 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0EA052598610100AA2A09 /* .gitignore */; };
+		7FD0EA6825988AB900AA2A09 /* AmazonHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA6725988AB900AA2A09 /* AmazonHomeController.swift */; };
+		7FD0EA6E25988AF400AA2A09 /* AmazonHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0EA6D25988AF400AA2A09 /* AmazonHome.storyboard */; };
+		7FD0EA7125988B1500AA2A09 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA7025988B1500AA2A09 /* HomeCell.swift */; };
+		7FD0EA7425988B1E00AA2A09 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA7325988B1E00AA2A09 /* HomeModel.swift */; };
 		7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D5254705A60025273A /* auto_layout2.png */; };
 		7FDBD6D8254705A60025273A /* auto_layout.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D6254705A60025273A /* auto_layout.png */; };
 		7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6DB254706570025273A /* CustomVCViewController1.swift */; };
@@ -115,6 +119,10 @@
 		7FB3ED072544458100F653AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController2.swift; sourceTree = "<group>"; };
 		7FD0EA052598610100AA2A09 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7FD0EA6725988AB900AA2A09 /* AmazonHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonHomeController.swift; sourceTree = "<group>"; };
+		7FD0EA6D25988AF400AA2A09 /* AmazonHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmazonHome.storyboard; sourceTree = "<group>"; };
+		7FD0EA7025988B1500AA2A09 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		7FD0EA7325988B1E00AA2A09 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7FDBD6D5254705A60025273A /* auto_layout2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout2.png; sourceTree = "<group>"; };
 		7FDBD6D6254705A60025273A /* auto_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout.png; sourceTree = "<group>"; };
 		7FDBD6DB254706570025273A /* CustomVCViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVCViewController1.swift; sourceTree = "<group>"; };
@@ -201,6 +209,7 @@
 		7F51357F23E114240043438D /* ios-example */ = {
 			isa = PBXGroup;
 			children = (
+				7FD0EA642598834D00AA2A09 /* MVVM */,
 				7F05DBAA254D175400E7F25E /* CollectionView */,
 				7F05DBA8254D167700E7F25E /* WithoutStoryBoard */,
 				7FA5CCF0254D0DBB00B28545 /* PodUsages */,
@@ -319,6 +328,33 @@
 			path = Autolayout/Autolayout2;
 			sourceTree = "<group>";
 		};
+		7FD0EA642598834D00AA2A09 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				7FD0EA6B25988AD500AA2A09 /* AmazonApp */,
+				7FD0EA652598835C00AA2A09 /* common */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		7FD0EA652598835C00AA2A09 /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		7FD0EA6B25988AD500AA2A09 /* AmazonApp */ = {
+			isa = PBXGroup;
+			children = (
+				7FD0EA7325988B1E00AA2A09 /* HomeModel.swift */,
+				7FD0EA7025988B1500AA2A09 /* HomeCell.swift */,
+				7FD0EA6D25988AF400AA2A09 /* AmazonHome.storyboard */,
+				7FD0EA6725988AB900AA2A09 /* AmazonHomeController.swift */,
+			);
+			path = AmazonApp;
+			sourceTree = "<group>";
+		};
 		7FDBD6DA254706380025273A /* CustomViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +462,7 @@
 				7FDBD6D8254705A60025273A /* auto_layout.png in Resources */,
 				7F56F4F323E3F7B600FE1263 /* Horizontal-CollectionView.png in Resources */,
 				7F05DBB0254D179D00E7F25E /* NetflixMovie.storyboard in Resources */,
+				7FD0EA6E25988AF400AA2A09 /* AmazonHome.storyboard in Resources */,
 				7F56F4F023E3F6AC00FE1263 /* VerticalCollectionViewController.png in Resources */,
 				7F0583802549BD7F0042C41A /* SizeClasses.storyboard in Resources */,
 				7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */,
@@ -491,9 +528,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD0EA7125988B1500AA2A09 /* HomeCell.swift in Sources */,
 				7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */,
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
 				7F05DBB5254D1ABE00E7F25E /* MovieCell.swift in Sources */,
+				7FD0EA7425988B1E00AA2A09 /* HomeModel.swift in Sources */,
 				7FA5CCF2254D0DF400B28545 /* PodUsagesViewController.swift in Sources */,
 				7FEB275E2549799E00F24E13 /* LandScapeUIViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
@@ -511,6 +550,7 @@
 				7F51358123E114240043438D /* AppDelegate.swift in Sources */,
 				7F05837C2549BD740042C41A /* SizeClassesViewController.swift in Sources */,
 				7FDBD6E3254706980025273A /* Child1ViewController.swift in Sources */,
+				7FD0EA6825988AB900AA2A09 /* AmazonHomeController.swift in Sources */,
 				7F51359F23E169ED0043438D /* CustomView.swift in Sources */,
 				7F5CBA6023E80ABA0032D502 /* MyCollectionView.swift in Sources */,
 				7FB3ECE52543EB0F00F653AF /* AdaptiveLayoutViewCntroller.swift in Sources */,

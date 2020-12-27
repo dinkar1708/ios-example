@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "NetflixMovie", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "NetflixMovieController") as!NetflixMovieController
+        let storyboard = UIStoryboard(name: "AmazonHome", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AmazonHomeController") as!AmazonHomeController
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -32,6 +32,11 @@ class ViewController: UIViewController {
         stackView.distribution  = UIStackView.Distribution.equalSpacing
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
+
+        let amazon = UIButton()
+        amazon.backgroundColor = .gray
+        amazon.setTitle("Amazon app", for: .normal)
+        amazon.addTarget(self, action: #selector(amazonAction), for: .touchUpInside)
 
         let movie = UIButton()
         movie.backgroundColor = .gray
@@ -118,6 +123,7 @@ class ViewController: UIViewController {
         tableViewCollectionView.setTitle("TableViewCollectionView", for: .normal)
         tableViewCollectionView.addTarget(self, action: #selector(tableViewCollectionViewAction), for: .touchUpInside)
 
+        stackView.addArrangedSubview(amazon)
         stackView.addArrangedSubview(movie)
         stackView.addArrangedSubview(pod)
         stackView.addArrangedSubview(size)
@@ -145,14 +151,19 @@ class ViewController: UIViewController {
         // add in view
         self.view.addSubview(scrollView)
     }
-    
+
+    @objc func amazonAction(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "AmazonHome", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AmazonHomeController") as!AmazonHomeController
+        self.present(vc, animated: true, completion: nil)
+    }
+
     @objc func movieAction(sender: UIButton!) {
         let storyboard = UIStoryboard(name: "NetflixMovie", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "NetflixMovieController") as!NetflixMovieController
         self.present(vc, animated: true, completion: nil)
     }
-    
-    
+
     @objc func podUsagesAction(sender: UIButton!) {
         let storyboard = UIStoryboard(name: "PodUsages", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "PodUsagesViewController") as!PodUsagesViewController
