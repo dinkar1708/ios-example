@@ -15,15 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         uiSetup()
     }
-    
-    
+
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "CustomVC", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "CustomVCViewController1") as!CustomVCViewController1
+        let storyboard = UIStoryboard(name: "NetflixMovie", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NetflixMovieController") as!NetflixMovieController
         self.present(vc, animated: true, completion: nil)
     }
     
     func uiSetup() {
+        let screensize: CGRect = UIScreen.main.bounds
+        let scrollView: UIScrollView = UIScrollView(frame: CGRect(x: 0, y: 40, width: screensize.width, height: screensize.height))
         //Stack View to arrange view automatically
         let stackView   = UIStackView()
         //        aligh vertical
@@ -31,7 +32,6 @@ class ViewController: UIViewController {
         stackView.distribution  = UIStackView.Distribution.equalSpacing
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing   = 16.0
-
 
         let movie = UIButton()
         movie.backgroundColor = .gray
@@ -137,13 +137,13 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(tableViewCollectionView)
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.view.addSubview(stackView)
-        
-        //Constraints
-        stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        
+
+        // add stack view in scroll view
+        scrollView.addSubview(stackView)
+        // make scroll view scrollable
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 100)
+        // add in view
+        self.view.addSubview(scrollView)
     }
     
     @objc func movieAction(sender: UIButton!) {
@@ -241,4 +241,3 @@ class ViewController: UIViewController {
         self.present(controller, animated: true, completion: nil)
     }
 }
-

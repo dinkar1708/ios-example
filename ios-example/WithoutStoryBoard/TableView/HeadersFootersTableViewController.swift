@@ -94,7 +94,7 @@ class HeadersFootersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 100)
         let headerView1 = UIView(frame: frame)
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 100))
+//        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 100))
         if(section==0){
             headerView1.backgroundColor = .red
         }else{

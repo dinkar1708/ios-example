@@ -21,7 +21,7 @@ class NetflixMovieController: UIViewController {
         super.viewDidLoad()
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
-        let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+//        let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         print(view.bounds.size.width)
         print(view.bounds.size.height)
         //        print(self.collectionView.widestCellWidth)

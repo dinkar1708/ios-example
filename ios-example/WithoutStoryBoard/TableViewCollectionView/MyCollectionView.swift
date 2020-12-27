@@ -64,7 +64,7 @@ extension MyCollectionView : UICollectionViewDataSource {
         print("Modelss")
         print(models[0].imageUrl)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "video_cell", for: indexPath) as! CollectionViewCell
-        var imageName = models[indexPath[1]].imageUrl
+        let imageName = models[indexPath[1]].imageUrl
         var imageView: UIImageView
         
         print("Image name...")

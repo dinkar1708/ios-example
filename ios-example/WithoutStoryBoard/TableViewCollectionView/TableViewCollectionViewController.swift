@@ -84,7 +84,7 @@ extension TableViewCollectionViewController : UITableViewDataSource {
             models =  [DataModel(imageUrl: "apple"), DataModel(imageUrl: "apple1"), DataModel(imageUrl: "apple")]
         }
         else  if(indexPath[1]==3){
-            [DataModel(imageUrl: "apple"), DataModel(imageUrl: "apple1")]
+            models = [DataModel(imageUrl: "apple"), DataModel(imageUrl: "apple1")]
         }
         
         cell.bindJobs(models: models)
