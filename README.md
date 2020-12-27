@@ -30,6 +30,21 @@ You can use [CocoaPods](http://cocoapods.org/) to install `ViewAnimator` by addi
 
 ```
 pod 'ViewAnimator'
+pod 'Cartography'
+```
+To get the full benefits import `ViewAnimator` wherever you import UIKit
+
+``` swift
+Example for two views
+constrain(vc.view, view) { child, parent in
+    // change the view position in custom vc
+    child.left == parent.left + 25
+    child.right == parent.right - 25
+    child.bottom == parent.bottom - 10
+    child.height == self.containerView.bounds.height
+}
+Ref documentation - 
+https://github.com/robb/Cartography
 ```
 
 To get the full benefits import `ViewAnimator` wherever you import UIKit
@@ -41,6 +56,7 @@ UIView.animate(views: self.collectionView!.orderedVisibleCells,
                 sender.isEnabled = true
                 })
 ```
+
 #### Carthage
 Create a `Cartfile` that lists the framework and run `carthage update`.
 
