@@ -7,6 +7,6 @@ target 'ios-example' do
 
   # Pods for ios-example
   pod "ViewAnimator"
-
+  pod 'Cartography', '~> 3.0'
 
 end
