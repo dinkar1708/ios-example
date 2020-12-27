@@ -38,10 +38,10 @@ class Child1ViewController: UIViewController {
         uiView.layer.shadowRadius = 6.0
         uiView.layer.shadowColor = UIColor.blue.cgColor
         
-        
-        let height : CGFloat  = 10
-        let width : CGFloat = 40
-        let shadowSize: CGFloat = 20
+//
+//        let height : CGFloat  = 10
+//        let width : CGFloat = 40
+//        let shadowSize: CGFloat = 20
 
         let x = view2.frame.minX
         let y = view2.frame.minY

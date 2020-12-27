@@ -91,11 +91,11 @@ class MyCollectionView2: UITableViewCell, UICollectionViewDataSource, UICollecti
         myCell.backgroundColor = UIColor.blue
         return myCell
     }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("User tapped on item \(indexPath.row)")
     }
-    
+
     // Important for footer and header height
     // MARK: - Footer
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
@@ -109,9 +109,8 @@ class MyCollectionView2: UITableViewCell, UICollectionViewDataSource, UICollecti
      */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         print("size of header.....")
-        let headerWidth: CGFloat = collectionView.bounds.width
-        
-        let headerHeight: CGFloat = 8
+//        let headerWidth: CGFloat = collectionView.bounds.width
+//        let headerHeight: CGFloat = 8
         return CGSize(width: 350, height: 450)
     }
     /**
@@ -151,12 +150,11 @@ class MyCollectionView2: UITableViewCell, UICollectionViewDataSource, UICollecti
      sizeForItemAt - size for each cell
      */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let verticalRowCount = UIDevice.current.userInterfaceIdiom == .phone ? 2 : 4
-        let contentWidth: CGFloat = (collectionView.bounds.width - 32 - 8 * CGFloat(verticalRowCount - 1)) / CGFloat(verticalRowCount)
-        let contentHeight: CGFloat = (contentWidth + 10)
+//        let verticalRowCount = UIDevice.current.userInterfaceIdiom == .phone ? 2 : 4
+//        let contentWidth: CGFloat = (collectionView.bounds.width - 32 - 8 * CGFloat(verticalRowCount - 1)) / CGFloat(verticalRowCount)
+//        let contentHeight: CGFloat = (contentWidth + 10)
         
-        let v = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerView, for: indexPath)
-        print("dddddd")
+        _ = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerView, for: indexPath)
         //        print(v.reuseIdentifier.)
         return CGSize(width: 130, height: 260)
     }

@@ -81,11 +81,11 @@ class VerticalCollectionViewController: UIViewController, UICollectionViewDataSo
         myCell.backgroundColor = UIColor.blue
         return myCell
     }
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("User tapped on item \(indexPath.row)")
     }
-    
+  
     /*
      // MARK: - Navigation
      
