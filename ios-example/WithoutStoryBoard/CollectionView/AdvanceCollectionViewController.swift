@@ -82,8 +82,8 @@ class AdvanceCollectionViewController: UIViewController, UICollectionViewDataSou
         myCell.backgroundColor = UIColor.blue
         return myCell
     }
-    
-    private func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("User tapped on item \(indexPath.row)")
     }
     

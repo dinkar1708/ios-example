@@ -141,7 +141,7 @@ class ViewController: UIViewController {
         // add stack view in scroll view
         scrollView.addSubview(stackView)
         // make scroll view scrollable
-        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 100)
+        scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 200)
         // add in view
         self.view.addSubview(scrollView)
     }

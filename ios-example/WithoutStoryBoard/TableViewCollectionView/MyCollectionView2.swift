@@ -91,11 +91,11 @@ class MyCollectionView2: UITableViewCell, UICollectionViewDataSource, UICollecti
         myCell.backgroundColor = UIColor.blue
         return myCell
     }
-    
-    private func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("User tapped on item \(indexPath.row)")
     }
-    
+
     // Important for footer and header height
     // MARK: - Footer
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
