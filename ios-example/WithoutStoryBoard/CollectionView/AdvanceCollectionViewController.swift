@@ -83,7 +83,7 @@ class AdvanceCollectionViewController: UIViewController, UICollectionViewDataSou
         return myCell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+    private func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
         print("User tapped on item \(indexPath.row)")
     }
     
