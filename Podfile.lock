@@ -1,16 +1,20 @@
 PODS:
-  - ViewAnimator (3.0.1)
+  - Cartography (4.0.0)
+  - ViewAnimator (3.0.2)
 
 DEPENDENCIES:
+  - Cartography
   - ViewAnimator
 
 SPEC REPOS:
   trunk:
+    - Cartography
     - ViewAnimator
 
 SPEC CHECKSUMS:
-  ViewAnimator: dd18d2f5c1e472f78d0065ff92750fe56cbd2f39
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  ViewAnimator: 16435576cd44fca0b0d63147d5031fd3e91d295a
 
-PODFILE CHECKSUM: e1ee770aed3cc18fbf089452a8533775c53c8ba1
+PODFILE CHECKSUM: 62791440f38784e920550c6b5a93c5d8d85979b7
 
 COCOAPODS: 1.8.4
