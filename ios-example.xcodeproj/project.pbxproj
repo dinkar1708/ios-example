@@ -51,6 +51,7 @@
 		7FB3ED022544344D00F653AF /* BasicPlacementToCorners1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */; };
 		7FB3ED082544458100F653AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED072544458100F653AF /* SignUpViewController.swift */; };
 		7FB3ED0E2544569300F653AF /* PriorityConstraintViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */; };
+		7FD0EA062598610100AA2A09 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0EA052598610100AA2A09 /* .gitignore */; };
 		7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D5254705A60025273A /* auto_layout2.png */; };
 		7FDBD6D8254705A60025273A /* auto_layout.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D6254705A60025273A /* auto_layout.png */; };
 		7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6DB254706570025273A /* CustomVCViewController1.swift */; };
@@ -113,6 +114,7 @@
 		7FB3ED012544344D00F653AF /* BasicPlacementToCorners1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPlacementToCorners1.swift; sourceTree = "<group>"; };
 		7FB3ED072544458100F653AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7FB3ED0D2544569300F653AF /* PriorityConstraintViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityConstraintViewController2.swift; sourceTree = "<group>"; };
+		7FD0EA052598610100AA2A09 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7FDBD6D5254705A60025273A /* auto_layout2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout2.png; sourceTree = "<group>"; };
 		7FDBD6D6254705A60025273A /* auto_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout.png; sourceTree = "<group>"; };
 		7FDBD6DB254706570025273A /* CustomVCViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVCViewController1.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		7F51357423E114240043438D = {
 			isa = PBXGroup;
 			children = (
+				7FD0EA052598610100AA2A09 /* .gitignore */,
 				7F51357F23E114240043438D /* ios-example */,
 				7F51357E23E114240043438D /* Products */,
 				9CF0A6EFF2051DCE6600240D /* Pods */,
@@ -416,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD0EA062598610100AA2A09 /* .gitignore in Resources */,
 				7FA5CCF6254D0E1000B28545 /* PodUsages.storyboard in Resources */,
 				7F56F4F523E3F80600FE1263 /* Horizontal-CollectionView2.png in Resources */,
 				7FDBD6E0254706660025273A /* CustomVC.storyboard in Resources */,

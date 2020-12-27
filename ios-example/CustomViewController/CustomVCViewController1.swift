@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cartography
 
 class CustomVCViewController1: UIViewController {
     
@@ -23,6 +24,9 @@ class CustomVCViewController1: UIViewController {
         
         childViewController2 = (UIStoryboard(name: "Child2", bundle: nil).instantiateViewController(withIdentifier: "Child2ViewController") as! Child2ViewController)
         
+        removeChildVC(vc: childViewController1)
+        addChildVC(vc: childViewController1)
+        updateConstraints(vc:childViewController1)
     }
     
     @IBAction func addChild1Action(_ sender: Any) {
@@ -30,7 +34,8 @@ class CustomVCViewController1: UIViewController {
         
         removeChildVC(vc: childViewController1)
         addChildVC(vc: childViewController1)
-        
+        updateConstraints(vc:childViewController1)
+
         // check childs, child should not again and again, only add child once
         print(self.children.count)
         print("count...")
@@ -45,8 +50,27 @@ class CustomVCViewController1: UIViewController {
         print(self.containerView.subviews.count)
         
         removeChildVC(vc: childViewController2)
-        
+    
         addChildVC(vc: childViewController2)
+        updateConstraints(vc:childViewController2)
+
+    }
+
+    func updateConstraints(vc:UIViewController) {
+//        constrain(view1, view2) { view1, view2 in
+        // view 2 is child in this case
+        constrain(vc.view, view) { child, parent in
+            // change the view position in custom vc
+            child.left == parent.left + 25
+            child.right == parent.right - 25
+            child.bottom == parent.bottom - 10
+            child.height == self.containerView.bounds.height
+        }
+        
+        // change the frame of custom vc
+//        self.view.frame.origin.x += (20)
+
+        self.view.layoutIfNeeded()
     }
     
     func addChildVC(vc : UIViewController) {

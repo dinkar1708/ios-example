@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "NetflixMovie", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "NetflixMovieController") as!NetflixMovieController
+        let storyboard = UIStoryboard(name: "CustomVC", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CustomVCViewController1") as!CustomVCViewController1
         self.present(vc, animated: true, completion: nil)
     }
     
