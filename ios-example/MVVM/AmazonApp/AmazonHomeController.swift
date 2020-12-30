@@ -10,9 +10,7 @@ import UIKit
 
 class AmazonHomeController: UIViewController {
     
-    let models: [HomeModel] = [HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover")
-    ,
-    HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover"),HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "Tom&Jerry", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "iphone_cover Potter", cover : "iphone_cover", previewCover : "iphone_cover"), HomeModel(name : "LEGO Super Mario", cover : "iphone_cover", previewCover : "iphone_cover")]
+    let models: [AmazonHome] = [AmazonHome(name: "iphone SE", image: "iphone_cover", price: 45000), AmazonHome(name: "iphone SE", image: "iphone_cover", price: 45000), AmazonHome(name: "iphone SE", image: "iphone_cover", price: 45000)]
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var priviewImageView: UIImageView!
@@ -31,11 +29,11 @@ extension AmazonHomeController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? HomeCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? AmazonHomeCell
         let model = self.models[indexPath.row]
         cell?.name.text = model.name
         print("model name")
-        cell?.cover.image = UIImage(named: model.cover)
+        cell?.image.image = UIImage(named: model.image)
         return cell!
     }
     
@@ -53,7 +51,7 @@ extension AmazonHomeController: UICollectionViewDelegate, UICollectionViewDataSo
         let model = self.models[indexPath.row]
         print("Selected... \(indexPath.row)")
         self.priviewImageView.image = UIImage(named: model
-                                                .previewCover)
+                                                .image)
     }
 
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -8,14 +8,14 @@
 
 import Foundation
 
-class HomeModel {
+class AmazonHome {
     let name : String!
-    let cover : String!
-    let previewCover : String!
+    let image : String!
+    let price : Float!
 
-    init(name: String, cover : String, previewCover : String) {
+    init(name: String, image : String, price : Float) {
         self.name = name
-        self.cover = cover
-        self.previewCover = previewCover
+        self.image = image
+        self.price = price
     }
 }

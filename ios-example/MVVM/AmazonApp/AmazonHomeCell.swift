@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HomeCell: UICollectionViewCell {
+class AmazonHomeCell: UICollectionViewCell {
     
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var cover: UIImageView!
+    @IBOutlet weak var image: UIImageView!
 }

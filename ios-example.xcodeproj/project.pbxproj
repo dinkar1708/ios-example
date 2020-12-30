@@ -54,8 +54,8 @@
 		7FD0EA062598610100AA2A09 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0EA052598610100AA2A09 /* .gitignore */; };
 		7FD0EA6825988AB900AA2A09 /* AmazonHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA6725988AB900AA2A09 /* AmazonHomeController.swift */; };
 		7FD0EA6E25988AF400AA2A09 /* AmazonHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0EA6D25988AF400AA2A09 /* AmazonHome.storyboard */; };
-		7FD0EA7125988B1500AA2A09 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA7025988B1500AA2A09 /* HomeCell.swift */; };
-		7FD0EA7425988B1E00AA2A09 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA7325988B1E00AA2A09 /* HomeModel.swift */; };
+		7FD0EA7125988B1500AA2A09 /* AmazonHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA7025988B1500AA2A09 /* AmazonHomeCell.swift */; };
+		7FD0EA7425988B1E00AA2A09 /* AmazonHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0EA7325988B1E00AA2A09 /* AmazonHome.swift */; };
 		7FDBD6D7254705A60025273A /* auto_layout2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D5254705A60025273A /* auto_layout2.png */; };
 		7FDBD6D8254705A60025273A /* auto_layout.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBD6D6254705A60025273A /* auto_layout.png */; };
 		7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBD6DB254706570025273A /* CustomVCViewController1.swift */; };
@@ -121,8 +121,8 @@
 		7FD0EA052598610100AA2A09 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7FD0EA6725988AB900AA2A09 /* AmazonHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonHomeController.swift; sourceTree = "<group>"; };
 		7FD0EA6D25988AF400AA2A09 /* AmazonHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AmazonHome.storyboard; sourceTree = "<group>"; };
-		7FD0EA7025988B1500AA2A09 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
-		7FD0EA7325988B1E00AA2A09 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		7FD0EA7025988B1500AA2A09 /* AmazonHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonHomeCell.swift; sourceTree = "<group>"; };
+		7FD0EA7325988B1E00AA2A09 /* AmazonHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonHome.swift; sourceTree = "<group>"; };
 		7FDBD6D5254705A60025273A /* auto_layout2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout2.png; sourceTree = "<group>"; };
 		7FDBD6D6254705A60025273A /* auto_layout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = auto_layout.png; sourceTree = "<group>"; };
 		7FDBD6DB254706570025273A /* CustomVCViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVCViewController1.swift; sourceTree = "<group>"; };
@@ -347,8 +347,8 @@
 		7FD0EA6B25988AD500AA2A09 /* AmazonApp */ = {
 			isa = PBXGroup;
 			children = (
-				7FD0EA7325988B1E00AA2A09 /* HomeModel.swift */,
-				7FD0EA7025988B1500AA2A09 /* HomeCell.swift */,
+				7FD0EA7325988B1E00AA2A09 /* AmazonHome.swift */,
+				7FD0EA7025988B1500AA2A09 /* AmazonHomeCell.swift */,
 				7FD0EA6D25988AF400AA2A09 /* AmazonHome.storyboard */,
 				7FD0EA6725988AB900AA2A09 /* AmazonHomeController.swift */,
 			);
@@ -528,11 +528,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD0EA7125988B1500AA2A09 /* HomeCell.swift in Sources */,
+				7FD0EA7125988B1500AA2A09 /* AmazonHomeCell.swift in Sources */,
 				7FDBD6DC254706570025273A /* CustomVCViewController1.swift in Sources */,
 				7FFC89B0253FD67200CC7C30 /* NetworkDemoViewController.swift in Sources */,
 				7F05DBB5254D1ABE00E7F25E /* MovieCell.swift in Sources */,
-				7FD0EA7425988B1E00AA2A09 /* HomeModel.swift in Sources */,
+				7FD0EA7425988B1E00AA2A09 /* AmazonHome.swift in Sources */,
 				7FA5CCF2254D0DF400B28545 /* PodUsagesViewController.swift in Sources */,
 				7FEB275E2549799E00F24E13 /* LandScapeUIViewController.swift in Sources */,
 				7F5135A423E172880043438D /* VerticalCollectionViewController.swift in Sources */,
